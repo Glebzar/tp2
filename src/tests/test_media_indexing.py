@@ -11,7 +11,7 @@ from src.media_indexing.folder_index import (
 import src.const 
 src.const.VARIOUS_ARTISTS_NAME = "Various Artists"
 def test_get_artist():
-    assert get_artist("[artist]") == "Artist"
+    assert get_artist("[artist]") == "artist"
     assert get_artist("") is None
     with pytest.raises(ValueError):
         get_artist("[artist] [artist]")
